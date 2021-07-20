@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/sopa_letras/static/css/main.c8c79bc3.chunk.css",
+    "main.js": "/sopa_letras/static/js/main.c979f664.chunk.js",
+    "main.js.map": "/sopa_letras/static/js/main.c979f664.chunk.js.map",
+    "runtime-main.js": "/sopa_letras/static/js/runtime-main.0581e2ee.js",
+    "runtime-main.js.map": "/sopa_letras/static/js/runtime-main.0581e2ee.js.map",
+    "static/css/2.4be38407.chunk.css": "/sopa_letras/static/css/2.4be38407.chunk.css",
+    "static/js/2.4daf0063.chunk.js": "/sopa_letras/static/js/2.4daf0063.chunk.js",
+    "static/js/2.4daf0063.chunk.js.map": "/sopa_letras/static/js/2.4daf0063.chunk.js.map",
+    "index.html": "/sopa_letras/index.html",
+    "static/css/2.4be38407.chunk.css.map": "/sopa_letras/static/css/2.4be38407.chunk.css.map",
+    "static/css/main.c8c79bc3.chunk.css.map": "/sopa_letras/static/css/main.c8c79bc3.chunk.css.map",
+    "static/js/2.4daf0063.chunk.js.LICENSE.txt": "/sopa_letras/static/js/2.4daf0063.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0581e2ee.js",
+    "static/css/2.4be38407.chunk.css",
+    "static/js/2.4daf0063.chunk.js",
+    "static/css/main.c8c79bc3.chunk.css",
+    "static/js/main.c979f664.chunk.js"
+  ]
+}
