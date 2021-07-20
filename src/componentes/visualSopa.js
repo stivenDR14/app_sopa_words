@@ -59,13 +59,19 @@ function VisualSopa(props){
       alert("no se han introducido todas las palabras")
     }else{
       for (let kk = 0; kk < 20; kk++) {
-        const numRandom4=randomGenerator(false,0,4)
+        const numRandom4=randomGenerator(false,1,5)
         if(numRandom22===1){
-          if(kk<15){
+          if(kk<3){
 
             //vertical
             arrayMayor.map((item,i)=>{
               item.splice(kk, 1, matrizPrincipal[kk][i-numRandom4-numRandom22*5]);
+            })
+          }
+          else if(kk>18){
+            //diagonal
+            matrizPrincipal[kk].map((item,i)=>{
+              arrayMayor[i].splice(i+numRandom4+numRandom22*5, 1, item);
             })
           }else{
             //horizontal
@@ -75,11 +81,16 @@ function VisualSopa(props){
           }
 
         }else{
-          if(kk>15){
+          if(kk<3){
 
             //vertical
             arrayMayor.map((item,i)=>{
               item.splice(kk, 1, matrizPrincipal[kk][i-numRandom4-numRandom22*5]);
+            })
+          }else if(kk>18){
+            //diagonal
+            matrizPrincipal[kk].map((item,i)=>{
+              arrayMayor[i].splice(i+numRandom4+numRandom22*5, 1, item);
             })
           }else{
             //horizontal
@@ -101,7 +112,7 @@ function VisualSopa(props){
   const sopa=arrayMostrar.map((item,i)=>
       <tr key={i}>
         {item.map((item2,j)=>
-            <td key={j} >{item2==""||typeof(item2)=="undefined"?<p>{letras[Math.floor(Math.random()*letras.length)]}</p>:<p style={{textTransform:"uppercase", color:"red"}}>{item2}</p>}</td>
+            <td key={j} >{item2==""||typeof(item2)=="undefined"?<p>{"-"/*letras[Math.floor(Math.random()*letras.length)]*/}</p>:<p style={{textTransform:"uppercase", color:"red"}}>{item2}</p>}</td>
         )}
       </tr>
     )
